@@ -34,4 +34,5 @@ jobs:
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           projectName: vite-react-app # Change if your Pages project name differs
           directory: dist
-          wranglerVersion: '3'
+          # Pin Wrangler to a stable v4 release used by Pages Action
+          wranglerVersion: '4.56.0'
